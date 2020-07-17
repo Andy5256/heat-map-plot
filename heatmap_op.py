@@ -4,7 +4,7 @@ import numpy as np
 points = np.arange(-5,5,0.1)
 xs,ys = np.meshgrid(points,points)
 # z1 = np.loadtxt("shiftvec_333_100_op_hdch.dat")
-z = np.loadtxt("shiftvec_111_100_op_4315.dat")
+z = np.loadtxt("shiftvec_111_100_op_4315.dat") # sc for GeS
 # z = np.transpose(z1)+z2
 nkp = 100
 N = np.zeros((2*nkp,2*nkp))

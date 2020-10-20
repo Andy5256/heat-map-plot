@@ -12,8 +12,7 @@ Z = (Z1 - Z2) * 2
 
 fig, ax = plt.subplots(2, 1)
 pcm = ax[0].pcolormesh(X, Y, Z,
-                       norm=colors.SymLogNorm(linthresh=0.1, linscale=1,
-                                              vmin=-9, vmax=0.9),
+                       norm=colors.SymLogNorm(linthresh=0.1, linscale=1),
                        cmap='summer')
 # fig.colorbar(pcm, ax=ax[0], extend='both')
 fig.colorbar(pcm, ax=ax[0], extend='both')
